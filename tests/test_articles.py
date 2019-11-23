@@ -1,4 +1,5 @@
 import pytest
+import allure
 
 from selenium.webdriver import Chrome
 from pages.search import SlashDotHomePage
@@ -12,6 +13,7 @@ def browser():
     driver.quit()
 
 
+@allure.description("this is amila test")
 def test_articles_on_homepage(browser):
     slackdot_page = SlashDotHomePage(browser)
     slackdot_page.load()
