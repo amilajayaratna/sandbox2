@@ -11,7 +11,8 @@ def browser():
     yield driver
     driver.quit()
 
-def test_articles_on_homepage():
+
+def test_articles_on_homepage(browser):
     slackdot_page = SlashDotHomePage(browser)
     slackdot_page.load()
 
