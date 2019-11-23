@@ -14,6 +14,7 @@ def browser():
 
 
 @allure.description("this is amila test")
+@allure.title("Count articles on homepage")
 def test_articles_on_homepage(browser):
     slackdot_page = SlashDotHomePage(browser)
     slackdot_page.load()
